@@ -1,0 +1,153 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/gilroy-medium.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/gilroy-bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/gilroy-black.woff);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url(./fonts/timesbd.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.body-img {
+    background: url(./images/header/mountains.png);
+    background-position: 0px -400px;
+    background-color: #E5E5E5;
+    background-repeat: no-repeat;
+}
+
+.container-big {
+    max-width: 1790px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding-top: 65px;
+    padding-bottom: 178px;
+}
+
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list-item-link {
+    margin: 0 20px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.header-link {
+    color: #FFFFFF;
+}
+
+.header__box-account-link {
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+}
+
+.header__box-account-link::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-image: url(./images/header/account.png);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hiking {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 929px;
+    margin: 0 auto;
+}
+
+.hiking__subtitle {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    color: #FBD784;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.hiking__subtitle::before {
+    content: '';
+    width: 72px;
+    height: 22px;
+    background-image: url(./images/main/line.svg);
+    margin-right: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hiking__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 100px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.hiking__scroll-down {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: inline-flex;
+}
+
+.hiking__scroll-down::after {
+    content: '';
+    background-image: url(./images/main/arrow_down.svg);
+    width: 16px;
+    height: 24px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
