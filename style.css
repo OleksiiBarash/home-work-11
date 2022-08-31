@@ -32,7 +32,7 @@
 }
 
 body {
-    font-family: 'Graphik', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -41,18 +41,20 @@ body {
 .body-img {
     background: url(./images/header/mountains.png);
     background-position: 0px -400px;
-    background-color: #E5E5E5;
+    background-color: #0B1D26;
     background-repeat: no-repeat;
 }
 
 .container-big {
     max-width: 1790px;
+    min-width: 991px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .container {
     max-width: 1230px;
+    min-width: 991px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -66,6 +68,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.link-logo > img {
+    padding-left: 8px;
 }
 
 .header__list {
@@ -86,6 +92,8 @@ body {
     font-size: 17px;
     line-height: 21px;
     display: flex;
+    margin-right: -8px;
+    margin-left: 10px;
 }
 
 .header__box-account-link::before {
@@ -98,15 +106,22 @@ body {
     background-position: center center;
 }
 
+.main {
+    margin-bottom: 192px;
+}
+
 .hiking {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 929px;
     margin: 0 auto;
+    margin-bottom: 859px;
+
 }
 
 .hiking__subtitle {
+    margin-bottom: 32px;
+}
+
+.subtitle {
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
@@ -114,10 +129,9 @@ body {
     color: #FBD784;
     text-transform: uppercase;
     display: flex;
-    margin-bottom: 32px;
 }
 
-.hiking__subtitle::before {
+.subtitle::before {
     content: '';
     width: 72px;
     height: 22px;
@@ -128,19 +142,26 @@ body {
 }
 
 .hiking__title {
-    font-family: 'Times New Roman', sans-serif;
-    font-weight: 700;
     font-size: 88px;
     line-height: 100px;
-    color: #FFFFFF;
     margin-bottom: 32px;
 }
 
+.title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
 .hiking__scroll-down {
+    color: #FFFFFF;
+}
+
+.link-arrow {
+    display: inline-flex;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
-    display: inline-flex;
+    align-items: center;
 }
 
 .hiking__scroll-down::after {
@@ -148,6 +169,191 @@ body {
     background-image: url(./images/main/arrow_down.svg);
     width: 16px;
     height: 24px;
-    color: #FFFFFF;
+}
+
+.link-arrow::after {
     margin-left: 16px;
+    background-repeat: no-repeat;
+}
+
+.scroll__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.scroll__list-item {
+    padding: 20px 0;
+}
+
+.scroll__list-item-link {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 20px 32px 20px 0;
+    text-align: end;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.scroll {
+    position: fixed;
+    right: 63px;
+    top: 322px;
+}
+
+.scroll__list-item-link:hover {
+    color: #FBD784;
+    border-right: 3px solid rgba(255, 255, 255, 1);
+}
+
+.main__box-content {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.main__box-content-information-subtitle {
+    margin-bottom: 27px;
+
+}
+
+.main__box-content-information-subtitle::before {
+    margin-right: 25px;
+}
+
+.main__box-content-information-title {
+    font-size: 64px;
+    line-height: 74px;
+    margin-bottom: 27px;
+}
+
+.main__box-content-information-text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+.main__box-content-information-read {
+    color: #FBD784;
+}
+
+.main__box-content-information-read::after {
+    content: '';
+    background-image: url(./images/main/arrow_left.svg);
+    width: 24px;
+    height: 16px;
+}
+
+.main__box-content-information-read:hover::after {
+    transform: translate(5px)
+}
+
+.main__box-content:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.main__box-content:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+.main__box-content-information {
+    width: 584px;
+    margin-right: 136px;
+}
+
+.main__box-content-information-left {
+    margin-left: 136px;
+    margin-right: 0px;
+}
+
+.main__box-content-information-number {
+    font-size: 240px;
+    line-height: 240px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.number-road {
+    left: 301px;
+    top: 1479px;
+}
+
+.number-mountain {
+    right: 712px;
+    top: 2398px;
+}
+
+.number-compass {
+    left: 300px;
+    top: 3318px;
+}
+
+.footer {
+    margin-bottom: 52px;
+}
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.footer__box-mntn-img {
+    margin-bottom: 30px;
+    padding-top: 6px;
+}
+
+.footer__box-mntn-text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+
+.footer__box-mntn {
+    width: 365px;
+}
+
+.footer__box-more {
+    width: 250px;
+    padding-left: 45px;
+}
+
+.more-left {
+    padding-left: 65px;
+}
+
+.footer__boxe-more-list-item-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.footer__boxe-more-list-item {
+    margin-bottom: 16px;
+}
+
+.item-more {
+    margin-bottom: 24px;
+}
+
+.item-last {
+    margin-bottom: 0px;
+}
+
+.footer__boxe-more-list-item-link:hover {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+}
+
+.footer__box-copyright {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 8px;
 }
