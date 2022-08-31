@@ -1,6 +1,7 @@
 * {
     text-decoration: none;
     box-sizing: border-box;
+    color: #FFFFFF;
 }
 
 @font-face {
@@ -39,8 +40,8 @@ body {
 
 
 .body-img {
-    background: url(./images/header/mountains.png);
-    background-position: 0px -400px;
+    background: url(./images/header/mountains.svg);
+    background-position: top center;
     background-color: #0B1D26;
     background-repeat: no-repeat;
 }
@@ -53,7 +54,7 @@ body {
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1200px;
     min-width: 991px;
     margin: 0 auto;
     padding: 0 15px;
@@ -82,10 +83,6 @@ body {
     margin: 0 20px;
     font-size: 18px;
     line-height: 22px;
-}
-
-.header-link {
-    color: #FFFFFF;
 }
 
 .header__box-account-link {
@@ -150,11 +147,6 @@ body {
 .title {
     font-family: 'Times New Roman', sans-serif;
     font-weight: 700;
-    color: #FFFFFF;
-}
-
-.hiking__scroll-down {
-    color: #FFFFFF;
 }
 
 .link-arrow {
@@ -184,15 +176,15 @@ body {
 
 .scroll__list-item {
     padding: 20px 0;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .scroll__list-item-link {
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
     padding: 20px 32px 20px 0;
     text-align: end;
-    border-right: 3px solid rgba(255, 255, 255, 0.5);
+
 }
 
 .scroll {
@@ -201,7 +193,7 @@ body {
     top: 322px;
 }
 
-.scroll__list-item-link:hover {
+.scroll__list-item:hover {
     color: #FBD784;
     border-right: 3px solid rgba(255, 255, 255, 1);
 }
@@ -209,6 +201,11 @@ body {
 .main__box-content {
     display: flex;
     align-items: center;
+}
+
+
+.main__box-content-information {
+    position: relative;
 }
 
 .main__box-content-information-subtitle {
@@ -229,7 +226,6 @@ body {
 .main__box-content-information-text {
     font-size: 18px;
     line-height: 32px;
-    color: #FFFFFF;
     margin-bottom: 27px;
 }
 
@@ -274,18 +270,18 @@ body {
 }
 
 .number-road {
-    left: 301px;
-    top: 1479px;
+    right: 380px;
+    bottom: 315px;
 }
 
 .number-mountain {
-    right: 712px;
-    top: 2398px;
+    right: 346px;
+    bottom: 302px;
 }
 
 .number-compass {
-    left: 300px;
-    top: 3318px;
+    right: 345px;
+    bottom: 305px;
 }
 
 .footer {
@@ -306,7 +302,6 @@ body {
 .footer__box-mntn-text {
     font-size: 18px;
     line-height: 32px;
-    color: #FFFFFF;
     padding-left: 8px;
 }
 
@@ -327,22 +322,21 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
-    color: #FFFFFF;
 }
 
 .footer__boxe-more-list-item {
     margin-bottom: 16px;
 }
 
-.item-more {
-    margin-bottom: 24px;
+.footer__boxe-more-list-item:first-child {
+    margin-top: 24px;
 }
 
-.item-last {
+.footer__boxe-more-list-item:last-child {
     margin-bottom: 0px;
 }
 
-.footer__boxe-more-list-item-link:hover {
+.footer__box-more-list {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
