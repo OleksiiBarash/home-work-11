@@ -209,7 +209,6 @@ body {
 .main__box-content {
     display: flex;
     align-items: center;
-    padding-left: 8px;
 }
 
 .main__box-content-information-subtitle {
@@ -218,7 +217,7 @@ body {
 }
 
 .main__box-content-information-subtitle::before {
-    margin-right: 25px;
+    margin-right: 24px;
 }
 
 .main__box-content-information-title {
